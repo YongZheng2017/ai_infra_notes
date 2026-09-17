@@ -1,0 +1,144 @@
+# ============================================================
+# AI / Machine Learning Project .gitignore
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# 测试与覆盖率
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# 类型检查 / Lint 缓存
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+
+# ---------- Jupyter Notebook ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- 模型与权重 ----------
+# 大文件不要进 Git，用 Git LFS 或外部存储
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.tflite
+*.safetensors
+*.bin
+*.model
+*.weights
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+models/
+checkpoints/
+weights/
+runs/
+logs/
+
+# Hugging Face 缓存
+.cache/
+huggingface/
+transformers_cache/
+*.safetensors.index.json
+
+# ---------- 数据集 ----------
+data/
+datasets/
+dataset/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.jsonl
+*.arrow
+*.tfrecord
+*.lmdb
+*.h5
+*.sqlite
+*.db
+
+# 注意：如果你有小的示例数据想纳入版本控制，
+# 可以在下面用 ! 显式排除，例如：
+# !data/sample.csv
+
+# ---------- 实验跟踪 / 可视化 ----------
+mlruns/
+mlflow/
+wandb/
+outputs/
+lightning_logs/
+tensorboard/
+events.out.tfevents.*
+*.tfevents.*
+optuna/
+ray_results/
+
+# ---------- 环境与配置（含密钥，务必忽略）----------
+.env
+.env.*
+!.env.example
+*.env
+secrets.yaml
+secrets.yml
+credentials.json
+config.local.yaml
+config.local.yml
+
+# ---------- 日志与临时文件 ----------
+*.log
+logs/
+tmp/
+temp/
+.cache/
+*.tmp
+*.swp
+
+# ---------- IDE / 编辑器 ----------
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
